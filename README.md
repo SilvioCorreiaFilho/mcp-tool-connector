@@ -3,8 +3,6 @@
 Run **large MCP tool catalogs** in production without letting them eat the context
 window or take the agent down.
 
-[![tests](https://github.com/SilvioCorreiaFilho/mcp-tool-connector/actions/workflows/tests.yml/badge.svg)](https://github.com/SilvioCorreiaFilho/mcp-tool-connector/actions/workflows/tests.yml)
-
 An agent wired to ~100 tools rarely fails for lack of a tool. It fails because:
 
 1. **The whole catalog schema rides along on every request.** Tens of thousands of
@@ -97,7 +95,7 @@ pytest                      # 27 tests: catalog, caller, and transport vs. an in
 python examples/demo_95_tools.py
 ```
 
-Python 3.10+. MIT licensed.
+Tested on Python 3.10, 3.12 and 3.14. MIT licensed.
 
 ## Related
 
